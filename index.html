@@ -5,17 +5,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta	name="description" content="Ohmyfood! est un site web de réservation de restaurants et de composition de menus en ligne." >
+    <meta name="description" content="Ohmyfood! est un site web de réservation de restaurants et de composition de menus en ligne.">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
-    <link rel="favicon" href="img/favicon.png" >
+    <link rel="favicon" href="img/favicon.png">
 
-    <--! Police Google font-->
+    <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Noto+Serif|Roboto|Sriracha&display=swap" rel="stylesheet">
-    <title>Oh My Food !</title>
+    <title>OhMyFood !</title>
 </head>
 
 <body>
 
+    <!--CONTAINER-->
+    <main id="container">
+
+        <!--HEADER-->
+        <header id="header">
+            <!--le nom du site s'affichera sur toute les pages-->
+            <h1 class="header">
+                <a class="header--lien" href="index.html" title="Page d'accueil">ohmyfood</a>
+            </h1>
+        </header>
+        <!--HEADER FIN-->
+
+        <!--NAVIGATION MENU-->
+        <nav id="nav">
+            <!--LES MENUS-->
+            <ul class="menu">
+                <li class="menu menu--menu1">
+                    <a class="menu--lien" href="pages/menu-1.html">
+                        <img class="menu--note" src="img/note.png" alt="La Note Enchantée" </div>
+                        <h2 class="menu--titre">La note enchantée</h2>
+                        <p class="menu--stitre">Menu</p>
+                    </a>
+                </li>
+                <li class="menu menu--menu2">
+                    <a class="menu--lien" href="pages/menu-2.html">
+                        <h2 class="menu--titre">Le chic à la française</h2>
+                        <p class="menu--stitre">Menu</p>
+                    </a>
+                </li>
+                <li class="menu menu--menu3">
+                    <a class="menu--lien" href="pages/menu-3.html">
+                        <h2 class="menu--titre">Le chic des papilles</h2>
+                        <p class="menu--stitre">Menu</p>
+                    </a>
+                </li>
+                <li class="menu menu--menu4">
+                    <a class="menu--lien" href="pages/menu-4.html">
+                        <h2 class="menu--titre">La palette du goût</h2>
+                        <p class="menu--stitre">Menu</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--NAVIGATION FIN-->
+
+        <!--BOUTON PROCHAINEMENT-->
+        <div class="btn">
+            <button class="btn--proch" type="button" disabled>
+                Prochainement
+                <span>.</span><span>.</span><span>.</span>
+            </button>
+        </div>
+
+
+
+        <!--BOUTON PROCHAINEMENT FIN-->
+    </main>
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <p class="footer">
+            <a class="footer--lien" href="pages/mentions-legales.html">Mentions Légales</a>
+        </p>
+        <p class="footer">
+            <a class="footer--lien" href="mailto:contact@ohmyfood.com">Contactez-Nous</a>
+        </p>
+    </footer>
+    <!--FOOTER FIN-->
 </body>
+
 </html>
