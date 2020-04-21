@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 li {
   padding-top: 16px;
 }
@@ -81,18 +85,27 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .nav-menu__menu--menu1 {
   background-color: #FCDFDB;
   font-family: "Devonshire";
   text-align: center;
-  width: 250px;
+  width: 300px;
+  height: 450px;
+  -webkit-box-shadow: 1px 3px 5px #888;
+          box-shadow: 1px 3px 5px #888;
 }
 
 .nav-menu__menu--menu1 .nav-menu__menu--titre1 {
   color: #3C1218;
   font-size: 35px;
+  margin: 0 auto;
+  width: auto;
 }
 
 .nav-menu__menu--menu1 .nav-menu__menu--stitre1 {
@@ -106,10 +119,18 @@ li {
   background-color: #FFF5FE;
   font-family: "Croissant one";
   text-align: center;
+  width: 300px;
+  height: 450px;
+  -webkit-box-shadow: 1px 3px 5px #888;
+          box-shadow: 1px 3px 5px #888;
 }
 
 .nav-menu__menu--menu2 .nav-menu__menu--titre2 {
   font-size: 35px;
+  background: -webkit-linear-gradient(140deg, #905BFD 0%, #D88526 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto;
 }
 
 .nav-menu__menu--menu2 .nav-menu__menu--stitre2 {
@@ -122,10 +143,17 @@ li {
   background-color: #F9F9F9;
   font-family: "Dancing script";
   text-align: center;
+  width: 300px;
+  height: 450px;
+  -webkit-box-shadow: 1px 3px 5px #888;
+          box-shadow: 1px 3px 5px #888;
 }
 
 .nav-menu__menu--menu3 .nav-menu__menu--titre3 {
   font-size: 35px;
+  background: -webkit-linear-gradient(140deg, #0887FB 0%, #0431DF 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-menu__menu--menu3 .nav-menu__menu--stitre3 {
@@ -138,10 +166,17 @@ li {
   background-color: #FDFFFD;
   font-family: "Kaushan script";
   text-align: center;
+  height: 450px;
+  width: 300px;
+  -webkit-box-shadow: 1px 3px 5px #888;
+          box-shadow: 1px 3px 5px #888;
 }
 
 .nav-menu__menu--menu4 .nav-menu__menu--titre4 {
   font-size: 35px;
+  background: -webkit-linear-gradient(140deg, #BFFF7E 0%, #42973C 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-menu__menu--menu4 .nav-menu__menu--stitre4 {
