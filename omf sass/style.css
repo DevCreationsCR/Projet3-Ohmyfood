@@ -1,4 +1,152 @@
-/* No CSS */
+/*--------INDEX--------*/
+@font-face {
+  font-family: "Segoe Print";
+  src: url("segoepr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "CasusPro";
+  src: url("CasusPro.woff2") format("woff2"), url("CasusPro.woff") format("woff"), url("CasusPro.ttf") format "truetype";
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "EuropaGrotesqueExtraBold";
+  src: url("EuropaGrotesqueExtraBold.woff2") format("woff2"), url("EuropaGrotesqueExtraBold.woff") format("woff"), url("EuropaGrotesqueExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Breul Grotesk A SemiLight";
+  src: url("Breul Grotesk A SemiLight.woff2") format("woff2"), url("Breul Grotesk A SemiLight.woff") format("woff"), url("Breul Grotesk A SemiLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----BODY----*/
+body {
+  font-size: 16px;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  padding-top: 16px;
+}
+
+/*----CONTENU----*/
+.contenu {
+  width: 100%;
+}
+
+/*----HEADER----*/
+.header .footer .btn-proch {
+  background-color: #579C87;
+}
+
+.header__header {
+  padding: 3px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__header--lien {
+  font-family: "Breul Grotesk A SemiLight";
+  font-weight: bold;
+  font-size: 80px;
+  color: #FFCA46;
+  -webkit-transition: text-shadow 0.8s ease-in-out;
+  transition: text-shadow 0.8s ease-in-out;
+}
+
+.header__header--lien:hover {
+  text-shadow: 0 0 5px #000, 0 0 5px #fff, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46;
+}
+
+/*----NAVIGATION----*/
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.nav-menu__menu--menu1 {
+  background-color: #FCDFDB;
+  font-family: "Devonshire";
+  text-align: center;
+  width: 250px;
+}
+
+.nav-menu__menu--menu1 .nav-menu__menu--titre1 {
+  color: #3C1218;
+  font-size: 35px;
+}
+
+.nav-menu__menu--menu1 .nav-menu__menu--stitre1 {
+  font-family: "Segoe Print";
+  font-weight: bold;
+  font-size: 30px;
+  color: #3C1218;
+}
+
+.nav-menu__menu--menu2 {
+  background-color: #FFF5FE;
+  font-family: "Croissant one";
+  text-align: center;
+}
+
+.nav-menu__menu--menu2 .nav-menu__menu--titre2 {
+  font-size: 35px;
+}
+
+.nav-menu__menu--menu2 .nav-menu__menu--stitre2 {
+  font-family: "FF Casus pro bold";
+  font-size: 30px;
+  color: #C77412;
+}
+
+.nav-menu__menu--menu3 {
+  background-color: #F9F9F9;
+  font-family: "Dancing script";
+  text-align: center;
+}
+
+.nav-menu__menu--menu3 .nav-menu__menu--titre3 {
+  font-size: 35px;
+}
+
+.nav-menu__menu--menu3 .nav-menu__menu--stitre3 {
+  font-family: "Segoe Print";
+  font-size: 30px;
+  color: #0887FB;
+}
+
+.nav-menu__menu--menu4 {
+  background-color: #FDFFFD;
+  font-family: "Kaushan script";
+  text-align: center;
+}
+
+.nav-menu__menu--menu4 .nav-menu__menu--titre4 {
+  font-size: 35px;
+}
+
+.nav-menu__menu--menu4 .nav-menu__menu--stitre4 {
+  font-family: "Segoe Print";
+  font-size: 30px;
+  color: #72BF56;
+}
 /*# sourceMappingURL=style.css.map */
