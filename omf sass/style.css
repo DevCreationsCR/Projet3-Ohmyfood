@@ -35,14 +35,23 @@ body {
 
 a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul {
   list-style-type: none;
-}
-
-li {
-  padding-top: 16px;
 }
 
 /*----CONTENU----*/
@@ -51,18 +60,17 @@ li {
 }
 
 /*----HEADER----*/
-.header .footer .btn-proch {
+.header {
   background-color: #579C87;
+  width: 100%;
 }
 
-.header__header {
-  padding: 3px;
+.header .header__header {
   text-align: center;
   font-size: 16px;
-  background-color: #579C87;
 }
 
-.header__header--lien {
+.header .header__header--lien {
   font-family: "Breul Grotesk A SemiLight";
   font-weight: bold;
   font-size: 80px;
@@ -71,7 +79,7 @@ li {
   transition: text-shadow 0.8s ease-in-out;
 }
 
-.header__header--lien:hover {
+.header .header__header--lien:hover {
   text-shadow: 0 0 5px #000, 0 0 5px #fff, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46;
 }
 
@@ -80,15 +88,15 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      flex-wrap: wrap;
+  height: 1000px;
 }
 
 /*----SASS NAV----*/
@@ -96,17 +104,17 @@ li {
   background-color: #FCDFDB;
   font-family: "Devonshire";
   text-align: center;
-  width: 300px;
-  height: 450px;
+  width: 400px;
+  height: 650px;
   -webkit-box-shadow: 1px 3px 5px #888;
           box-shadow: 1px 3px 5px #888;
+  padding: 20px;
+  margin: 100px;
 }
 
 .nav-menu__menu--menu1 .nav-menu__menu--titre1 {
   color: #3C1218;
   font-size: 35px;
-  margin: 0 auto;
-  width: auto;
 }
 
 .nav-menu__menu--menu1 .nav-menu__menu--stitre1 {
@@ -120,10 +128,12 @@ li {
   background-color: #FFF5FE;
   font-family: "Croissant one";
   text-align: center;
-  width: 300px;
-  height: 450px;
+  width: 400px;
+  height: 650px;
   -webkit-box-shadow: 1px 3px 5px #888;
           box-shadow: 1px 3px 5px #888;
+  padding: 20px;
+  margin: 100px;
 }
 
 .nav-menu__menu--menu2 .nav-menu__menu--titre2 {
@@ -131,7 +141,6 @@ li {
   background: -webkit-linear-gradient(140deg, #905BFD 0%, #D88526 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 auto;
 }
 
 .nav-menu__menu--menu2 .nav-menu__menu--stitre2 {
@@ -144,10 +153,12 @@ li {
   background-color: #F9F9F9;
   font-family: "Dancing script";
   text-align: center;
-  width: 300px;
-  height: 450px;
+  width: 400px;
+  height: 650px;
   -webkit-box-shadow: 1px 3px 5px #888;
           box-shadow: 1px 3px 5px #888;
+  padding: 20px;
+  margin: 100px;
 }
 
 .nav-menu__menu--menu3 .nav-menu__menu--titre3 {
@@ -155,7 +166,6 @@ li {
   background: -webkit-linear-gradient(140deg, #0887FB 0%, #0431DF 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 auto;
 }
 
 .nav-menu__menu--menu3 .nav-menu__menu--stitre3 {
@@ -168,10 +178,12 @@ li {
   background-color: #FDFFFD;
   font-family: "Kaushan script";
   text-align: center;
-  height: 450px;
-  width: 300px;
+  width: 400px;
+  height: 650px;
   -webkit-box-shadow: 1px 3px 5px #888;
           box-shadow: 1px 3px 5px #888;
+  padding: 20px;
+  margin: 100px;
 }
 
 .nav-menu__menu--menu4 .nav-menu__menu--titre4 {
@@ -179,7 +191,6 @@ li {
   background: -webkit-linear-gradient(140deg, #BFFF7E 0%, #42973C 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 auto;
 }
 
 .nav-menu__menu--menu4 .nav-menu__menu--stitre4 {

@@ -34,15 +34,16 @@ body {
 
 a {
     text-decoration: none;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 ul {
     list-style-type : none;
 }
 
-li {
-    padding-top: 16px;
-}
 
 
 /*----CONTENU----*/
@@ -53,19 +54,16 @@ li {
 
 
 /*----HEADER----*/
-
-.header .footer .btn-proch {
+.header{
     background-color: #579C87;
-}
+    width: 100%;
 
-.header__header {
-    padding: 3px;
+    .header__header {
     text-align: center;
     font-size: 16px;
-    background-color: #579C87;
 }
 
-.header__header--lien {
+    .header__header--lien {
     font-family: "Breul Grotesk A SemiLight";
     font-weight: bold;
     font-size: 80px;
@@ -75,56 +73,62 @@ li {
     transition: text-shadow 0.8s ease-in-out;
 }
 
-.header__header--lien:hover {
+    .header__header--lien:hover {
     text-shadow: 0 0 5px #000, 0 0 5px #fff, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46;
+}
+
 }
 
 
 /*----NAVIGATION----*/
 
 .nav-menu{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    flex-direction: row;
+    height: 1000px;
 }
 
 /*----SASS NAV----*/
 
-$font-menu : "Segoe Print";
-$color-menu1 : #3C1218;
-$size-titre : 35px;
-$size-stitre : 30px;
+$align-text : center;
+$margin : auto;
 $shadow : 1px 3px 5px #888;
-$width-menu : 300px;
-$height-menu : 450px;
-$align : center;
-$margin : 0 auto;
-$width: auto;
-$padding : 10px;
+
+$color-menu1 : #3C1218;
+$width-menu : 400px;
+$height-menu : 650px;
+$padding-menu: 20px;
+$margin-menu: 100px;
+$size-titre : 35px;
+$display-titre : flex;
+$font-stitre : "Segoe Print";
+$size-stitre : 30px;
+
+
 
 .nav-menu__menu--menu1{
     background-color: #FCDFDB;
     font-family: "Devonshire";
-    text-align: $align;
+    text-align: $align-text;
     width: $width-menu;
     height: $height-menu;
     box-shadow: $shadow;
+    padding: $padding-menu;
+    margin: $margin-menu;
+
+    .nav-menu__menu--img{
+
+    }
 
     .nav-menu__menu--titre1{
         color: $color-menu1;
         font-size: $size-titre;
-        margin: $margin;
-        width: $width;
     }
 
     .nav-menu__menu--stitre1{
-        font-family: $font-menu;
+        font-family: $font-stitre;
         font-weight: bold;
         font-size: $size-stitre;
         color:$color-menu1;
@@ -135,17 +139,18 @@ $padding : 10px;
 .nav-menu__menu--menu2{
     background-color: #FFF5FE;
     font-family: "Croissant one";
-    text-align: $align;
+    text-align: $align-text;
     width: $width-menu;
     height: $height-menu;
     box-shadow: $shadow;
+    padding: $padding-menu;
+    margin: $margin-menu;
 
     .nav-menu__menu--titre2{
         font-size: $size-titre;
         background: -webkit-linear-gradient(140deg,#905BFD 0%, #D88526 95%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;   
-        margin: $margin;
     }
     .nav-menu__menu--stitre2{
         font-family: "FF Casus pro bold";
@@ -158,21 +163,23 @@ $padding : 10px;
 .nav-menu__menu--menu3{
     background-color: #F9F9F9;
     font-family: "Dancing script";
-    text-align: $align;
+    text-align: $align-text;
     width: $width-menu;
     height: $height-menu;
     box-shadow: $shadow;
+    padding: $padding-menu;
+    margin: $margin-menu;
+
 
     .nav-menu__menu--titre3{
         font-size: $size-titre;
         background: -webkit-linear-gradient(140deg,#0887FB 0%, #0431DF 95%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;  
-        margin: $margin;
     }
 
     .nav-menu__menu--stitre3{
-        font-family: $font-menu;
+        font-family: $font-stitre;
         font-size: $size-stitre;
         color: #0887FB;
     }
@@ -181,20 +188,21 @@ $padding : 10px;
 .nav-menu__menu--menu4{
     background-color: #FDFFFD;
     font-family: "Kaushan script";
-    text-align: $align;
-    height: $height-menu;
+    text-align: $align-text;
     width: $width-menu;
+    height: $height-menu;
     box-shadow: $shadow;
+    padding: $padding-menu;
+    margin: $margin-menu;
 
     .nav-menu__menu--titre4{
         font-size: $size-titre;
         background: -webkit-linear-gradient(140deg,#BFFF7E 0%, #42973C 95%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
-        margin: $margin; 
     }
     .nav-menu__menu--stitre4{
-        font-family: $font-menu;
+        font-family: $font-stitre;
         font-size: $size-stitre;
         color: #72BF56;
     }
