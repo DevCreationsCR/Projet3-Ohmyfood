@@ -47,7 +47,7 @@ li {
 
 /*----CONTENU----*/
 .contenu {
-  width: 100%;
+  width: 0 auto;
 }
 
 /*----HEADER----*/
@@ -59,7 +59,7 @@ li {
   padding: 3px;
   text-align: center;
   font-size: 16px;
-  font-weight: 400;
+  background-color: #579C87;
 }
 
 .header__header--lien {
@@ -91,6 +91,7 @@ li {
           flex-direction: row;
 }
 
+/*----SASS NAV----*/
 .nav-menu__menu--menu1 {
   background-color: #FCDFDB;
   font-family: "Devonshire";
@@ -154,6 +155,7 @@ li {
   background: -webkit-linear-gradient(140deg, #0887FB 0%, #0431DF 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 0 auto;
 }
 
 .nav-menu__menu--menu3 .nav-menu__menu--stitre3 {
@@ -177,6 +179,7 @@ li {
   background: -webkit-linear-gradient(140deg, #BFFF7E 0%, #42973C 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 0 auto;
 }
 
 .nav-menu__menu--menu4 .nav-menu__menu--stitre4 {

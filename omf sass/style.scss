@@ -48,7 +48,7 @@ li {
 /*----CONTENU----*/
 
 .contenu {
-    width: 100%;
+    width: 0 auto;
 }
 
 
@@ -62,7 +62,7 @@ li {
     padding: 3px;
     text-align: center;
     font-size: 16px;
-    font-weight: 400;
+    background-color: #579C87;
 }
 
 .header__header--lien {
@@ -94,7 +94,7 @@ li {
     flex-direction: row;
 }
 
-
+/*----SASS NAV----*/
 
 $font-menu : "Segoe Print";
 $color-menu1 : #3C1218;
@@ -168,6 +168,7 @@ $padding : 10px;
         background: -webkit-linear-gradient(140deg,#0887FB 0%, #0431DF 95%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;  
+        margin: $margin;
     }
 
     .nav-menu__menu--stitre3{
@@ -189,7 +190,8 @@ $padding : 10px;
         font-size: $size-titre;
         background: -webkit-linear-gradient(140deg,#BFFF7E 0%, #42973C 95%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;  
+        -webkit-text-fill-color: transparent; 
+        margin: $margin; 
     }
     .nav-menu__menu--stitre4{
         font-family: $font-menu;
