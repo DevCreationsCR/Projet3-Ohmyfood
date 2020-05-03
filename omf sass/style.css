@@ -27,14 +27,27 @@
   font-style: normal;
 }
 
-/*----BODY----*/
-body {
-  font-size: 16px;
-  background-color: #fff;
+/*--------BODY--------*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a {
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFF;
+}
+
+body a {
+  color: #000;
   text-decoration: none;
+}
+
+/*--------CONTAINER--------*/
+.contenu {
+  width: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,48 +55,46 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-/*----CONTENU----*/
-.contenu {
-  width: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*----HEADER----*/
 .header {
   background-color: #579C87;
-  width: 100%;
 }
 
 .header .header__header {
+  padding: 10px;
   text-align: center;
-  font-size: 16px;
 }
 
 .header .header__header--lien {
+  width: 100%;
+  height: 100%;
   font-family: "Breul Grotesk A SemiLight";
   font-weight: bold;
   font-size: 80px;
   color: #FFCA46;
-  -webkit-transition: text-shadow 0.8s ease-in-out;
-  transition: text-shadow 0.8s ease-in-out;
 }
 
 .header .header__header--lien:hover {
-  text-shadow: 0 0 5px #000, 0 0 5px #fff, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46, 0 0 5px #FCCA46;
+  text-shadow: 0 0 2px #000, 0 0 2px #fff, 0 0 2px #FCCA46, 0 0 2px #FCCA46, 0 0 2px #FCCA46, 0 0 2px #FCCA46, 0 0 2px #FCCA46;
 }
 
 /*----NAVIGATION----*/
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,23 +107,77 @@ ul {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 1000px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-/*----SASS NAV----*/
+/*--------SASS--------*/
+/*----MENU----*/
+ul {
+  list-style: none;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+li a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 .nav-menu__menu--menu1 {
   background-color: #FCDFDB;
   font-family: "Devonshire";
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
+  opacity: 1;
   text-align: center;
-  width: 400px;
-  height: 650px;
-  -webkit-box-shadow: 1px 3px 5px #888;
-          box-shadow: 1px 3px 5px #888;
+  width: 530px;
+  height: 760px;
   padding: 20px;
-  margin: 100px;
+  margin: 50px;
+}
+
+.nav-menu__menu--menu1 .nav-menu__menu--img {
+  margin: 0px auto;
 }
 
 .nav-menu__menu--menu1 .nav-menu__menu--titre1 {
+  line-height: 100px;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
   color: #3C1218;
   font-size: 35px;
 }
@@ -120,20 +185,20 @@ ul {
 .nav-menu__menu--menu1 .nav-menu__menu--stitre1 {
   font-family: "Segoe Print";
   font-weight: bold;
-  font-size: 30px;
   color: #3C1218;
+  font-size: 35px;
 }
 
 .nav-menu__menu--menu2 {
   background-color: #FFF5FE;
   font-family: "Croissant one";
   text-align: center;
-  width: 400px;
-  height: 650px;
-  -webkit-box-shadow: 1px 3px 5px #888;
-          box-shadow: 1px 3px 5px #888;
+  width: 530px;
+  height: 760px;
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
   padding: 20px;
-  margin: 100px;
+  margin: 50px;
 }
 
 .nav-menu__menu--menu2 .nav-menu__menu--titre2 {
@@ -153,12 +218,12 @@ ul {
   background-color: #F9F9F9;
   font-family: "Dancing script";
   text-align: center;
-  width: 400px;
-  height: 650px;
-  -webkit-box-shadow: 1px 3px 5px #888;
-          box-shadow: 1px 3px 5px #888;
+  width: 530px;
+  height: 760px;
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
   padding: 20px;
-  margin: 100px;
+  margin: 50px;
 }
 
 .nav-menu__menu--menu3 .nav-menu__menu--titre3 {
@@ -178,12 +243,12 @@ ul {
   background-color: #FDFFFD;
   font-family: "Kaushan script";
   text-align: center;
-  width: 400px;
-  height: 650px;
-  -webkit-box-shadow: 1px 3px 5px #888;
-          box-shadow: 1px 3px 5px #888;
+  width: 530px;
+  height: 760px;
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
   padding: 20px;
-  margin: 100px;
+  margin: 50px;
 }
 
 .nav-menu__menu--menu4 .nav-menu__menu--titre4 {
@@ -198,4 +263,37 @@ ul {
   font-size: 30px;
   color: #72BF56;
 }
+
+/*--------BOUTON--------*/
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 100%;
+  padding: 2% 0 2% 0;
+}
+
+.btn .btn--proch {
+  background-color: #579C87;
+  font-size: 36px;
+  color: #FFCA46;
+  margin: 0 auto;
+  padding: 8px 56px 8px 24px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.btn .btn--proch span {
+  position: absolute;
+  right: 20px;
+  bottom: 4px;
+}
+
+/*--------FOOTER--------*/
 /*# sourceMappingURL=style.css.map */
