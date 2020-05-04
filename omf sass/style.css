@@ -1,4 +1,4 @@
-/*--------INDEX--------*/
+/*----------------INDEX----------------*/
 @font-face {
   font-family: "Segoe Print";
   src: url("segoepr.ttf") format("truetype");
@@ -45,6 +45,7 @@ body a {
   text-decoration: none;
 }
 
+/*--------RESPONSIVE--------*/
 /*--------CONTAINER--------*/
 .contenu {
   width: 0 auto;
@@ -62,6 +63,7 @@ body a {
 /*----HEADER----*/
 .header {
   background-color: #579C87;
+  width: 100%;
 }
 
 .header .header__header {
@@ -91,8 +93,12 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
 }
 
 .nav-menu {
@@ -102,20 +108,20 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: row wrap;
+      flex-wrap: row wrap;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px 0 30px;
 }
 
 /*--------SASS--------*/
 /*----MENU----*/
 ul {
   list-style: none;
+  width: 100%;
+  height: 100%;
 }
 
 li {
@@ -293,7 +299,86 @@ li a:hover {
   position: absolute;
   right: 20px;
   bottom: 4px;
+  -webkit-animation: a;
+          animation: a;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.btn .btn--proch span:nth-child(2) {
+  right: 20px;
+  -webkit-animation: .2s;
+          animation: .2s;
+}
+
+.btn .btn--proch span:nth-child(3) {
+  right: 20px;
+  -webkit-animation: .4s;
+          animation: .4s;
 }
 
 /*--------FOOTER--------*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #579C87;
+  color: #FFCA46;
+  padding: 20px 10px 20px 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .mentions a, .footer .contact a {
+  color: #FFCA46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.footer .mentions a:hover, .footer .contact a:hover {
+  -webkit-animation: wiggle 250ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+          animation: wiggle 250ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+}
+
+/*----------------PAGE MENU----------------*/
+/*--------MENU 1--------*/
+.section {
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
 /*# sourceMappingURL=style.css.map */
