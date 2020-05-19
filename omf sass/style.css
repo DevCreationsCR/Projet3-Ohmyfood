@@ -215,7 +215,7 @@ li a:hover {
 
 .nav-menu__menu--menu3 {
   background-color: #F9F9F9;
-  font-family: "Dancing script";
+  font-family: "Kaushan script";
   text-align: center;
   width: 430px;
   height: 560px;
@@ -364,19 +364,54 @@ li a:hover {
 }
 
 .footer .mentions a:hover, .footer .contact a:hover {
-  -webkit-animation: wiggle 250ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
-          animation: wiggle 250ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 /*--------SASS MENU--------*/
 /*----------------PAGE MENU----------------*/
+/*--------HEADER--------*/
 .section {
+  font-size: 28px;
   text-align: center;
   padding: 40px 0 10px 0;
 }
 
-.menu-table_caption--titre {
-  margin: 0 auto;
+.carte-menu__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*--------MENU GENERAL--------*/
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.menu-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-table__titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,15 +425,144 @@ li a:hover {
 
 /*--------MENU 1--------*/
 .carte--menu1 {
-  font-family: "kalam";
+  font-family: "Kalam";
   color: #3d1319;
   background-color: #FCDFBD;
   -webkit-box-shadow: 0.5px 0.5px 5px #888;
           box-shadow: 0.5px 0.5px 5px #888;
   opacity: 1;
-  width: 800px;
-  height: 700px;
+  width: 900px;
+  height: 1000px;
   padding: 20px;
   margin: 50px;
 }
+
+.carte--menu1 .carte-menu__header--titre1 {
+  font-family: "Devonshire";
+  font-size: 45px;
+}
+
+.carte--menu1 .menu-table__stitre1 {
+  position: relative;
+  white-space: nowrap;
+  margin: 0 35px 0 35px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.carte--menu1 .menu-table__liste1 {
+  margin: 10px 0 20px 0;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/*--------MENU 2--------*/
+.carte--menu2 {
+  font-family: "Libre Baskerville";
+  color: #3d1319;
+  background-color: #FFF5FE;
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
+  opacity: 1;
+  width: 900px;
+  height: 1000px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.carte--menu2 .carte-menu__header--titre2 {
+  font-family: "Croissant one";
+  font-size: 45px;
+  background: -webkit-linear-gradient(140deg, #905BFD 0%, #D88526 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px 0 20px 0;
+}
+
+.carte--menu2 .menu-table__stitre2 {
+  white-space: nowrap;
+  margin: 0 35px 0 35px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.carte--menu2 .menu-table__liste2 {
+  margin: 10px 0 20px 0;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/*--------MENU 3--------*/
+.carte--menu3 {
+  font-family: "Kalam";
+  color: #000;
+  background-color: #F9F9F9;
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
+  opacity: 1;
+  width: 900px;
+  height: 1000px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.carte--menu3 .carte-menu__header--titre3 {
+  font-family: "Dancing script";
+  font-size: 45px;
+  background: -webkit-linear-gradient(140deg, #0887FB 0%, #0431DF 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px 0 20px 0;
+}
+
+.carte--menu3 .menu-table__stitre3 {
+  white-space: nowrap;
+  margin: 0 35px 0 35px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.carte--menu3 .menu-table__liste3 {
+  margin: 10px 0 20px 0;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/*--------MENU 4--------*/
+.carte--menu4 {
+  font-family: "Kalam";
+  color: #000;
+  background-color: #FDFFFD;
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
+  opacity: 1;
+  width: 900px;
+  height: 1000px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.carte--menu4 .carte-menu__header--titre4 {
+  font-family: "Kaushan script";
+  font-size: 45px;
+  background: -webkit-linear-gradient(140deg, #BFFF7E 0%, #42973C 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px 0 20px 0;
+}
+
+.carte--menu4 .menu-table__stitre4 {
+  white-space: nowrap;
+  margin: 0 35px 0 35px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.carte--menu4 .menu-table__liste4 {
+  margin: 10px 0 20px 0;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/*--------MENTIONS LEGALES--------*/
 /*# sourceMappingURL=style.css.map */

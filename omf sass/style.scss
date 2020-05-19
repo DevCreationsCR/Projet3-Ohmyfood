@@ -115,6 +115,10 @@ $size-titre : 30px;
 $display-titre : flex;
 $font-stitre : "Segoe Print";
 $size-stitre : 30px;
+$font-menu1 : "Devonshire";
+$font-menu2 : "Croissant one";
+$font-menu3 : "Dancing script";
+$font-menu4 : "Kaushan script";
 
 
 
@@ -148,7 +152,7 @@ li a{
 
 .nav-menu__menu--menu1{
     background-color: #FCDFDB;
-    font-family: "Devonshire";
+    font-family: $font-menu1;
     box-shadow: $shadow;
     opacity: $opacity-Shadow;
     text-align: $align-text;
@@ -177,7 +181,7 @@ li a{
 
 .nav-menu__menu--menu2{
     background-color: #FFF5FE;
-    font-family: "Croissant one";
+    font-family: $font-menu2;
     text-align: $align-text;
     width: $width-menu;
     height: $height-menu;
@@ -200,7 +204,7 @@ li a{
 
 .nav-menu__menu--menu3{
     background-color: #F9F9F9;
-    font-family: "Dancing script";
+    font-family: $font-menu4;
     text-align: $align-text;
     width: $width-menu;
     height: $height-menu;
@@ -225,7 +229,7 @@ li a{
 
 .nav-menu__menu--menu4{
     background-color: #FDFFFD;
-    font-family: "Kaushan script";
+    font-family: $font-menu4;
     text-align: $align-text;
     width: $width-menu;
     height: $height-menu;
@@ -316,8 +320,8 @@ li a{
             text-align: center;
             height: 100%;
             &:hover{
-                animation: wiggle 250ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
-            }
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;            }
         }
     }
 }
@@ -325,21 +329,55 @@ li a{
 
 /*--------SASS MENU--------*/
 
-$width-page : 800px;
-$height-page : 700px;
+$width-page : 900px;
+$height-page : 1000px;
 $padding-page : 20px;
 $margin-page : 50px;
+$color-page : #000;
+$size-ptitre : 45px;
+$font-page-1-3-4: "Kalam";
+$white-space: nowrap;
+$margin-stitre: 0 35px 0 35px;
 
 /*----------------PAGE MENU----------------*/
 
+/*--------HEADER--------*/
 .section{
-    text-align: center;
+    font-size: 28px;
+    text-align: $align-text;
     padding: 40px 0 10px 0;
 }
 
+.carte-menu__header{
+    text-align: $align-text;
+    margin-bottom: 50px;
+}
 
-.menu-table_caption--titre{
-    margin: 0 auto;
+/*--------MENU GENERAL--------*/
+
+td{
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.menu-table{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu-table__titre{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -348,7 +386,7 @@ $margin-page : 50px;
 /*--------MENU 1--------*/
 
 .carte--menu1{
-    font-family: "kalam";
+    font-family: $font-page-1-3-4;
     color: #3d1319;
     background-color: #FCDFBD;
     box-shadow: $shadow;
@@ -356,8 +394,138 @@ $margin-page : 50px;
     width: $width-page;
     height: $height-page;
     padding: $padding-page;
-    margin: $margin-page;  
+    margin: $margin-page; 
+    
+    .carte-menu__header--titre1{
+        font-family: $font-menu1;
+        font-size: $size-ptitre;
+    }
+
+    .menu-table__stitre1{
+        position: relative;
+        white-space: $white-space;
+        margin: $margin-stitre;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .menu-table__liste1{
+        margin: 10px 0 20px 0;
+        line-height: 2;
+        font-size: 16px;
+    }
+
+
+}
+
+/*--------MENU 2--------*/
+
+.carte--menu2{
+    font-family: "Libre Baskerville";
+    color: #3d1319;
+    background-color: #FFF5FE;
+    box-shadow: $shadow;
+    opacity: $opacity-Shadow;
+    width: $width-page;
+    height: $height-page;
+    padding: $padding-page;
+    margin: $margin-page;
+
+    .carte-menu__header--titre2{
+        font-family: $font-menu2;
+        font-size: $size-ptitre;
+        background: -webkit-linear-gradient(140deg,#905BFD 0%, #D88526 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        padding: 20px 0 20px 0;
+    }
+
+    .menu-table__stitre2{
+        white-space: $white-space;
+        margin: $margin-stitre;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .menu-table__liste2{
+        margin: 10px 0 20px 0;
+        line-height: 2;
+        font-size: 16px;
+    }
+}
+
+/*--------MENU 3--------*/
+
+.carte--menu3{
+    font-family: $font-page-1-3-4;
+    color:$color-page;
+    background-color: #F9F9F9;
+    box-shadow: $shadow;
+    opacity: $opacity-Shadow;
+    width: $width-page;
+    height: $height-page;
+    padding: $padding-page;
+    margin: $margin-page;
+
+    .carte-menu__header--titre3{
+        font-family: $font-menu3;
+        font-size: $size-ptitre;
+        background: -webkit-linear-gradient(140deg,#0887FB 0%, #0431DF 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        padding: 20px 0 20px 0;
+    }
+
+    .menu-table__stitre3{
+        white-space: $white-space;
+        margin: $margin-stitre;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .menu-table__liste3{
+        margin: 10px 0 20px 0;
+        line-height: 2;
+        font-size: 16px;
+    }
 }
 
 
+/*--------MENU 4--------*/
+
+.carte--menu4{
+    font-family: $font-page-1-3-4;
+    color: $color-page;
+    background-color: #FDFFFD;
+    box-shadow: $shadow;
+    opacity: $opacity-Shadow;
+    width: $width-page;
+    height: $height-page;
+    padding: $padding-page;
+    margin: $margin-page;
+
+    .carte-menu__header--titre4{
+        font-family: $font-menu4;
+        font-size: $size-ptitre;
+        background: -webkit-linear-gradient(140deg,#BFFF7E 0%, #42973C 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        padding: 20px 0 20px 0;
+    }
+
+    .menu-table__stitre4{
+        white-space: $white-space;
+        margin: $margin-stitre;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .menu-table__liste4{
+        margin: 10px 0 20px 0;
+        line-height: 2;
+        font-size: 16px;
+    }
+}
+
+/*--------MENTIONS LEGALES--------*/
 
