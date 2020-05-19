@@ -88,32 +88,30 @@ $color-Principal : #FFCA46;
 .nav{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
+    justify-content: space-around;
     box-shadow: border-box;
 }
 
 .nav-menu{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: row wrap; 
-    position: relative;
+    justify-content: center;
+    flex-wrap: wrap; 
     padding: 0 30px 0 30px;
 }
 
 
-/*--------SASS--------*/
+/*--------SASS INDEX--------*/
 
 $align-text: center;
 $shadow: 0.5px 0.5px 5px #888;
 $opacity-Shadow : 1;
 $color-menu1 : #3C1218;
-$width-menu : 530px;
-$height-menu : 760px;
+$width-menu : 430px;
+$height-menu : 560px;
 $padding-menu: 20px;
 $margin-menu: 50px;
-$size-titre : 35px;
+$size-titre : 30px;
 $display-titre : flex;
 $font-stitre : "Segoe Print";
 $size-stitre : 30px;
@@ -124,8 +122,8 @@ $size-stitre : 30px;
 
 ul{
     list-style: none; 
-    width: 100%;
-    height: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 li{
@@ -139,8 +137,6 @@ li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     transform: scale(1);
     transition: transform 400ms;
     &:hover {
@@ -161,18 +157,12 @@ li a{
     padding: $padding-menu;
     margin: $margin-menu;   
     
-   
-
-
     .nav-menu__menu--img{
         margin: 0px auto;
     }
 
     .nav-menu__menu--titre1{
         line-height: 100px;
-        text-align: center;
-        width: 100%;
-        padding: 15px;
         color: $color-menu1;
         font-size: $size-titre;
     }
@@ -293,7 +283,8 @@ li a{
         right: 20px;
         animation: .4s;
     }
-    }    
+    }
+        
 }   
 
 /*--------FOOTER--------*/
@@ -331,11 +322,42 @@ li a{
     }
 }
 
-/*----------------PAGE MENU----------------*/
 
-/*--------MENU 1--------*/
+/*--------SASS MENU--------*/
+
+$width-page : 800px;
+$height-page : 700px;
+$padding-page : 20px;
+$margin-page : 50px;
+
+/*----------------PAGE MENU----------------*/
 
 .section{
     text-align: center;
     padding: 40px 0 10px 0;
 }
+
+
+.menu-table_caption--titre{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/*--------MENU 1--------*/
+
+.carte--menu1{
+    font-family: "kalam";
+    color: #3d1319;
+    background-color: #FCDFBD;
+    box-shadow: $shadow;
+    opacity: $opacity-Shadow;
+    width: $width-page;
+    height: $height-page;
+    padding: $padding-page;
+    margin: $margin-page;  
+}
+
+
+

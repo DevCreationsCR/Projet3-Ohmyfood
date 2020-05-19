@@ -93,10 +93,8 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-shadow: border-box;
           box-shadow: border-box;
 }
@@ -108,20 +106,20 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: row wrap;
-      flex-wrap: row wrap;
-  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 30px 0 30px;
 }
 
-/*--------SASS--------*/
+/*--------SASS INDEX--------*/
 /*----MENU----*/
 ul {
   list-style: none;
-  width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 li {
@@ -147,8 +145,6 @@ li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: 100%;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 400ms;
@@ -169,8 +165,8 @@ li a:hover {
           box-shadow: 0.5px 0.5px 5px #888;
   opacity: 1;
   text-align: center;
-  width: 530px;
-  height: 760px;
+  width: 430px;
+  height: 560px;
   padding: 20px;
   margin: 50px;
 }
@@ -181,26 +177,23 @@ li a:hover {
 
 .nav-menu__menu--menu1 .nav-menu__menu--titre1 {
   line-height: 100px;
-  text-align: center;
-  width: 100%;
-  padding: 15px;
   color: #3C1218;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .nav-menu__menu--menu1 .nav-menu__menu--stitre1 {
   font-family: "Segoe Print";
   font-weight: bold;
   color: #3C1218;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .nav-menu__menu--menu2 {
   background-color: #FFF5FE;
   font-family: "Croissant one";
   text-align: center;
-  width: 530px;
-  height: 760px;
+  width: 430px;
+  height: 560px;
   -webkit-box-shadow: 0.5px 0.5px 5px #888;
           box-shadow: 0.5px 0.5px 5px #888;
   padding: 20px;
@@ -208,7 +201,7 @@ li a:hover {
 }
 
 .nav-menu__menu--menu2 .nav-menu__menu--titre2 {
-  font-size: 35px;
+  font-size: 30px;
   background: -webkit-linear-gradient(140deg, #905BFD 0%, #D88526 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -224,8 +217,8 @@ li a:hover {
   background-color: #F9F9F9;
   font-family: "Dancing script";
   text-align: center;
-  width: 530px;
-  height: 760px;
+  width: 430px;
+  height: 560px;
   -webkit-box-shadow: 0.5px 0.5px 5px #888;
           box-shadow: 0.5px 0.5px 5px #888;
   padding: 20px;
@@ -233,7 +226,7 @@ li a:hover {
 }
 
 .nav-menu__menu--menu3 .nav-menu__menu--titre3 {
-  font-size: 35px;
+  font-size: 30px;
   background: -webkit-linear-gradient(140deg, #0887FB 0%, #0431DF 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -249,8 +242,8 @@ li a:hover {
   background-color: #FDFFFD;
   font-family: "Kaushan script";
   text-align: center;
-  width: 530px;
-  height: 760px;
+  width: 430px;
+  height: 560px;
   -webkit-box-shadow: 0.5px 0.5px 5px #888;
           box-shadow: 0.5px 0.5px 5px #888;
   padding: 20px;
@@ -258,7 +251,7 @@ li a:hover {
 }
 
 .nav-menu__menu--menu4 .nav-menu__menu--titre4 {
-  font-size: 35px;
+  font-size: 30px;
   background: -webkit-linear-gradient(140deg, #BFFF7E 0%, #42973C 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -375,10 +368,37 @@ li a:hover {
           animation: wiggle 250ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
 }
 
+/*--------SASS MENU--------*/
 /*----------------PAGE MENU----------------*/
-/*--------MENU 1--------*/
 .section {
   text-align: center;
   padding: 40px 0 10px 0;
+}
+
+.menu-table_caption--titre {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+/*--------MENU 1--------*/
+.carte--menu1 {
+  font-family: "kalam";
+  color: #3d1319;
+  background-color: #FCDFBD;
+  -webkit-box-shadow: 0.5px 0.5px 5px #888;
+          box-shadow: 0.5px 0.5px 5px #888;
+  opacity: 1;
+  width: 800px;
+  height: 700px;
+  padding: 20px;
+  margin: 50px;
 }
 /*# sourceMappingURL=style.css.map */
