@@ -410,9 +410,9 @@ li a:hover {
 /*----------------PAGE MENU----------------*/
 /*--------HEADER--------*/
 .section {
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
-  padding: 40px 0 10px 0;
+  padding: 40px 0 20px 0;
 }
 
 .carte-menu__header {
@@ -421,16 +421,6 @@ li a:hover {
 }
 
 /*--------MENU GENERAL--------*/
-.menu-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .menu-table__titre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,6 +431,10 @@ li a:hover {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.prix {
+  font-weight: bold;
 }
 
 /*--------MENU 1--------*/
@@ -454,7 +448,7 @@ li a:hover {
   width: 900px;
   height: 1000px;
   padding: 20px;
-  margin: 50px;
+  margin: 0 auto 20px auto;
 }
 
 .carte--menu1 .carte-menu__header--titre1 {
@@ -466,7 +460,7 @@ li a:hover {
   position: relative;
   white-space: nowrap;
   margin: 0 35px 0 35px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -488,11 +482,13 @@ li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Devonshire";
+  text-align: center;
   font-size: 26px;
 }
 
 .carte--menu1 .carte__footer .carte__footer--img {
   width: 50px;
+  height: 100%;
   margin-right: 10px;
   margin-bottom: -10px;
 }
@@ -508,7 +504,7 @@ li a:hover {
   width: 900px;
   height: 1000px;
   padding: 20px;
-  margin: 50px;
+  margin: 0 auto 20px auto;
 }
 
 .carte--menu2 .carte-menu__header--titre2 {
@@ -517,7 +513,7 @@ li a:hover {
   background: -webkit-linear-gradient(140deg, #905BFD 0%, #D88526 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 20px 0 20px 0;
+  padding: 100px 0 100px 0;
 }
 
 .carte--menu2 .menu-table__stitre2 {
@@ -525,6 +521,11 @@ li a:hover {
   margin: 0 35px 0 35px;
   font-size: 18px;
   font-weight: 700;
+  color: #D17122;
+}
+
+.carte--menu2 .menu-table__stitre2:nth-of-type(2) p {
+  color: #A6669a;
 }
 
 .carte--menu2 .menu-table__liste2 {
@@ -544,7 +545,7 @@ li a:hover {
   width: 900px;
   height: 1000px;
   padding: 20px;
-  margin: 50px;
+  margin: 0 auto 20px auto;
 }
 
 .carte--menu3 .carte-menu__header--titre3 {
@@ -580,7 +581,7 @@ li a:hover {
   width: 900px;
   height: 1000px;
   padding: 20px;
-  margin: 50px;
+  margin: 0 auto 20px auto;
 }
 
 .carte--menu4 .carte-menu__header--titre4 {
@@ -606,4 +607,22 @@ li a:hover {
 }
 
 /*--------MENTIONS LEGALES--------*/
+.article_mentions {
+  margin: 50px 50px 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: justify;
+}
+
+.article_mentions h2 {
+  line-height: 2;
+  font-size: 30px;
+}
+
+.article_mentions p {
+  padding-top: 15px;
+}
 /*# sourceMappingURL=style.css.map */
