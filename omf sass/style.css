@@ -364,10 +364,46 @@ li a:hover {
 }
 
 .footer .mentions a:hover, .footer .contact a:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
 }
 
 /*--------SASS MENU--------*/
@@ -385,22 +421,6 @@ li a:hover {
 }
 
 /*--------MENU GENERAL--------*/
-td {
-  display: table-cell;
-  vertical-align: inherit;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-thead {
-  display: table-header-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-
 .menu-table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,6 +474,27 @@ thead {
   margin: 10px 0 20px 0;
   line-height: 2;
   font-size: 16px;
+}
+
+.carte--menu1 .carte__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Devonshire";
+  font-size: 26px;
+}
+
+.carte--menu1 .carte__footer .carte__footer--img {
+  width: 50px;
+  margin-right: 10px;
+  margin-bottom: -10px;
 }
 
 /*--------MENU 2--------*/
