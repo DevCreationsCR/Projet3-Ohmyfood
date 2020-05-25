@@ -270,24 +270,34 @@ li a{
     border-radius: 6px;
     }
 
-    .btn--proch span {
-    position: absolute;
-    right: 20px;
-    bottom: 4px;
-    animation: a;
-    animation-duration: 1.4s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    &:nth-child(2){
-        right: 20px;
-        animation: .2s;
+    .point {
+        content: '';
+        animation: wiggleWiggle steps(5,end) 2.5s infinite;
     }
-    &:nth-child(3)
-    {
-        right: 20px;
-        animation: .4s;
-    }
-    }
+
+      @keyframes wiggleWiggle {
+        20% {
+            color: rgba(0, 0, 0, 0);
+            text-shadow: 4px 0 0 rgba(0, 0, 0, 0), 8px 0 0 rgba(0, 0, 0, 0);
+        }
+      
+        40% {
+            color: #FFCA46;
+            text-shadow: 4px 0 0 rgba(0, 0, 0, 0), 8px 0 0 rgba(0, 0, 0, 0);
+        }
+
+        60% {
+            text-shadow: 4px 0 0 #FFCA46, 8px 0 0 rgba(0, 0, 0, 0);
+          }
+
+        80% {
+            text-shadow: 4px 0 0 #FFCA46, 8px 0 0 rgba(0, 0, 0, 0);
+          }
+
+        10% {
+            text-shadow: 4px 0 0 #FFCA46, 8px 0 0 #FFCA46;
+        }
+      }
         
 }   
 
@@ -349,7 +359,7 @@ li a{
 
 $width-page : 900px;
 $height-page : 1000px;
-$padding-page : 20px;
+$padding-page : 100px;
 $margin-page : 50px;
 $color-page : #000;
 $size-ptitre : 45px;
@@ -376,15 +386,25 @@ $margin-table : 0 auto 20px auto;
 
 .menu-table__titre{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     align-items: baseline;
+
 }
 
-
+.menup{
+    display: flex;
+    justify-content: space-between;
+}
 
 .prix{
     font-weight: bold;
 }
+
+.img{
+    margin: auto;
+    padding: 10px;
+}
+
 
 /*--------MENU 1--------*/
 
@@ -396,7 +416,7 @@ $margin-table : 0 auto 20px auto;
     opacity: $opacity-Shadow;
     width: $width-page;
     height: $height-page;
-    padding: $padding-page;
+    padding: 100px;
     margin: $margin-table; 
     
     .carte-menu__header--titre1{
@@ -410,7 +430,24 @@ $margin-table : 0 auto 20px auto;
         margin: $margin-stitre;
         font-size: 30px;
         font-weight: 700;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            content: "";
+            color: #000;
+            border-bottom: solid 3px;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transform: scaleX(0);
+            transition: 1s;
+            transform-origin: 0% 50%;
+        }
     }
+
     
     .menu-table__liste1{
         margin: 10px 0 20px 0;
@@ -420,16 +457,20 @@ $margin-table : 0 auto 20px auto;
 
     .carte__footer{
         display: flex;
-        flex-direction: row;
         justify-content: center;
         font-family: $font-menu1;
         text-align: center;
         font-size: 26px;
+        margin-top: 150px;
         .carte__footer--img{
-            width: 50px;
+            width: 40px;
             height: 100%;
             margin-right: 10px;
             margin-bottom: -10px;
+        }
+
+        p{
+            font-size: 36px;
         }
     }
 
@@ -464,17 +505,33 @@ $margin-table : 0 auto 20px auto;
         font-size: 18px;
         font-weight: 700;
         color: #D17122;
-
-        &:nth-of-type(2) p{
-            color : #A6669a;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            content: "";
+            color: #000;
+            border-bottom: solid 3px;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transform: scaleX(0);
+            transition: 1s;
+            transform-origin: 0% 50%;
         }
     }
     
     .menu-table__liste2{
-        margin: 10px 0 20px 0;
+        margin: 50px 0 50px 0;
+        padding: 0 50px 0 50px;
         line-height: 2;
         font-size: 16px;
     }
+
+    
+
 }
 
 /*--------MENU 3--------*/
@@ -503,11 +560,27 @@ $margin-table : 0 auto 20px auto;
         white-space: $white-space;
         margin: $margin-stitre;
         font-size: 18px;
-        font-weight: 700;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            content: "";
+            color: #000;
+            border-bottom: solid 3px;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transform: scaleX(0);
+            transition: 1s;
+            transform-origin: 0% 50%;
+        }
     }
     
     .menu-table__liste3{
-        margin: 10px 0 20px 0;
+        margin: 50px 0 50px 0;
+        padding: 0 50px 0 50px;
         line-height: 2;
         font-size: 16px;
     }
@@ -541,10 +614,27 @@ $margin-table : 0 auto 20px auto;
         margin: $margin-stitre;
         font-size: 18px;
         font-weight: 700;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            content: "";
+            color: #000;
+            border-bottom: solid 3px;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transform: scaleX(0);
+            transition: 1s;
+            transform-origin: 0% 50%;
+        }
     }
     
     .menu-table__liste4{
-        margin: 10px 0 20px 0;
+        margin: 50px 0 50px 0;
+        padding: 0 50px 0 50px;
         line-height: 2;
         font-size: 16px;
     }
@@ -567,6 +657,10 @@ $margin-table : 0 auto 20px auto;
     
     p{
         padding-top: 15px;
+    }
+
+    a{
+        color: $back-Principal;
     }
 }
 

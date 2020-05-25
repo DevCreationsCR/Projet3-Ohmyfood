@@ -288,30 +288,50 @@ li a:hover {
   border-radius: 6px;
 }
 
-.btn .btn--proch span {
-  position: absolute;
-  right: 20px;
-  bottom: 4px;
-  -webkit-animation: a;
-          animation: a;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+.btn .point {
+  content: '';
+  -webkit-animation: wiggleWiggle steps(5, end) 2.5s infinite;
+          animation: wiggleWiggle steps(5, end) 2.5s infinite;
 }
 
-.btn .btn--proch span:nth-child(2) {
-  right: 20px;
-  -webkit-animation: .2s;
-          animation: .2s;
+@-webkit-keyframes wiggleWiggle {
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 4px 0 0 rgba(0, 0, 0, 0), 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #FFCA46;
+    text-shadow: 4px 0 0 rgba(0, 0, 0, 0), 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 4px 0 0 #FFCA46, 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  80% {
+    text-shadow: 4px 0 0 #FFCA46, 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  10% {
+    text-shadow: 4px 0 0 #FFCA46, 8px 0 0 #FFCA46;
+  }
 }
 
-.btn .btn--proch span:nth-child(3) {
-  right: 20px;
-  -webkit-animation: .4s;
-          animation: .4s;
+@keyframes wiggleWiggle {
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 4px 0 0 rgba(0, 0, 0, 0), 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #FFCA46;
+    text-shadow: 4px 0 0 rgba(0, 0, 0, 0), 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 4px 0 0 #FFCA46, 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  80% {
+    text-shadow: 4px 0 0 #FFCA46, 8px 0 0 rgba(0, 0, 0, 0);
+  }
+  10% {
+    text-shadow: 4px 0 0 #FFCA46, 8px 0 0 #FFCA46;
+  }
 }
 
 /*--------FOOTER--------*/
@@ -433,8 +453,22 @@ li a:hover {
           align-items: baseline;
 }
 
+.menup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .prix {
   font-weight: bold;
+}
+
+.img {
+  margin: auto;
+  padding: 10px;
 }
 
 /*--------MENU 1--------*/
@@ -447,7 +481,7 @@ li a:hover {
   opacity: 1;
   width: 900px;
   height: 1000px;
-  padding: 20px;
+  padding: 100px;
   margin: 0 auto 20px auto;
 }
 
@@ -464,6 +498,26 @@ li a:hover {
   font-weight: 700;
 }
 
+.carte--menu1 .menu-table__stitre1:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.carte--menu1 .menu-table__stitre1::after {
+  content: "";
+  color: #000;
+  border-bottom: solid 3px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
 .carte--menu1 .menu-table__liste1 {
   margin: 10px 0 20px 0;
   line-height: 2;
@@ -474,23 +528,24 @@ li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Devonshire";
   text-align: center;
   font-size: 26px;
+  margin-top: 150px;
 }
 
 .carte--menu1 .carte__footer .carte__footer--img {
-  width: 50px;
+  width: 40px;
   height: 100%;
   margin-right: 10px;
   margin-bottom: -10px;
+}
+
+.carte--menu1 .carte__footer p {
+  font-size: 36px;
 }
 
 /*--------MENU 2--------*/
@@ -503,7 +558,7 @@ li a:hover {
   opacity: 1;
   width: 900px;
   height: 1000px;
-  padding: 20px;
+  padding: 100px;
   margin: 0 auto 20px auto;
 }
 
@@ -524,12 +579,29 @@ li a:hover {
   color: #D17122;
 }
 
-.carte--menu2 .menu-table__stitre2:nth-of-type(2) p {
-  color: #A6669a;
+.carte--menu2 .menu-table__stitre2:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.carte--menu2 .menu-table__stitre2::after {
+  content: "";
+  color: #000;
+  border-bottom: solid 3px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
 }
 
 .carte--menu2 .menu-table__liste2 {
-  margin: 10px 0 20px 0;
+  margin: 50px 0 50px 0;
+  padding: 0 50px 0 50px;
   line-height: 2;
   font-size: 16px;
 }
@@ -544,7 +616,7 @@ li a:hover {
   opacity: 1;
   width: 900px;
   height: 1000px;
-  padding: 20px;
+  padding: 100px;
   margin: 0 auto 20px auto;
 }
 
@@ -561,11 +633,31 @@ li a:hover {
   white-space: nowrap;
   margin: 0 35px 0 35px;
   font-size: 18px;
-  font-weight: 700;
+}
+
+.carte--menu3 .menu-table__stitre3:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.carte--menu3 .menu-table__stitre3::after {
+  content: "";
+  color: #000;
+  border-bottom: solid 3px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
 }
 
 .carte--menu3 .menu-table__liste3 {
-  margin: 10px 0 20px 0;
+  margin: 50px 0 50px 0;
+  padding: 0 50px 0 50px;
   line-height: 2;
   font-size: 16px;
 }
@@ -580,7 +672,7 @@ li a:hover {
   opacity: 1;
   width: 900px;
   height: 1000px;
-  padding: 20px;
+  padding: 100px;
   margin: 0 auto 20px auto;
 }
 
@@ -600,8 +692,29 @@ li a:hover {
   font-weight: 700;
 }
 
+.carte--menu4 .menu-table__stitre4:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.carte--menu4 .menu-table__stitre4::after {
+  content: "";
+  color: #000;
+  border-bottom: solid 3px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
 .carte--menu4 .menu-table__liste4 {
-  margin: 10px 0 20px 0;
+  margin: 50px 0 50px 0;
+  padding: 0 50px 0 50px;
   line-height: 2;
   font-size: 16px;
 }
@@ -625,5 +738,9 @@ li a:hover {
 
 .article_mentions p {
   padding-top: 15px;
+}
+
+.article_mentions a {
+  color: #579C87;
 }
 /*# sourceMappingURL=style.css.map */
