@@ -44,9 +44,24 @@ body{
 
 /*--------RESPONSIVE--------*/
 
+@media screen and (max-width: 200px) {
+    .contenu {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .div{
+        width: auto;
+    }
+}
+
+
 @media screen and (max-width: 400px) {
     .contenu {
         flex-direction: column;
+        width: auto;
+    }
+    .div{
         width: auto;
     }
 }

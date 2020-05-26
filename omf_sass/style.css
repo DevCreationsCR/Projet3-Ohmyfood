@@ -46,12 +46,28 @@ body a {
 }
 
 /*--------RESPONSIVE--------*/
+@media screen and (max-width: 200px) {
+  .contenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+  }
+  .div {
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: auto;
+  }
+  .div {
     width: auto;
   }
 }
