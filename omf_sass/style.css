@@ -46,7 +46,7 @@ body a {
 }
 
 /*--------RESPONSIVE--------*/
-@media screen and (max-width: 200px) {
+@media all and (max-width: 200px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -59,7 +59,7 @@ body a {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -75,7 +75,7 @@ body a {
   }
 }
 
-@media screen and (min-width: 401px) and (max-width: 720px) {
+@media all and (max-width: 576px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -85,7 +85,7 @@ body a {
   }
 }
 
-@media screen and (min-width: 721px) and (max-width: 1280px) {
+@media all and (min-width: 401px) and (max-width: 720px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -95,7 +95,7 @@ body a {
   }
 }
 
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
+@media all and (min-width: 721px) and (max-width: 1280px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -105,7 +105,7 @@ body a {
   }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+@media all and (min-width: 1281px) and (max-width: 1440px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -115,7 +115,17 @@ body a {
   }
 }
 
-@media screen and (min-width: 1921px) {
+@media all and (min-width: 1441px) and (max-width: 1920px) {
+  .contenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+  }
+}
+
+@media all and (min-width: 1921px) {
   .contenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
