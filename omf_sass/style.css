@@ -46,23 +46,63 @@ body a {
 }
 
 /*--------RESPONSIVE--------*/
-@media all and (max-width: 576px) {
+@media screen and (max-width: 380px) {
   .contenu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: auto;
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
   }
 }
 
-@media all and (max-width: 900px) {
+@media screen and (max-width: 576px) {
   .contenu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: auto;
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenu {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contenu {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
   }
 }
 
@@ -365,7 +405,6 @@ li a:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   bottom: 0;
-  width: 100%;
 }
 
 .footer div {
