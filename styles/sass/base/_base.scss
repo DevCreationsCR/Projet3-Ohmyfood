@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'europagrotesqueextraboldroman';
+    src: url('europagrotesqueextrabold-webfont.woff2') format('woff2'),
+         url('europagrotesqueextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'breulgroteska-semuploadedfile';
+    src: url('breul_grotesk_a_semilight-webfont.woff2') format('woff2'),
+         url('breul_grotesk_a_semilight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Kalam&family=Kaushan+Script&family=Libre+Baskerville&family=Noto+Serif&family=Roboto&family=Sriracha&family=Tillana&family=Devonshire&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */ 
+}
+
+body{
+    height: 100%;
+    font-size: 1rem;
+    background-color: #FFF;
+
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+} 

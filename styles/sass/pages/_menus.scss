@@ -1,0 +1,246 @@
+/*--------MENU GENERAL--------*/
+
+.menu__titre{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    margin: 0;
+}
+
+.menup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prix{
+    font-weight: bold;
+}
+
+.section{
+    text-align: center;
+    padding: 2rem 2rem;
+    &__titre{
+        font-size: $size-titre;
+    }
+}
+
+.carte__header{
+    padding: 4rem 0 4rem 0;
+}
+
+.carte__img{
+    width: 7rem;
+}
+
+.menu__imgg{
+    margin-left: 6rem;
+}
+.menu__imgd{
+    margin-right: 6rem;
+}
+
+/*--------MENU 1--------*/
+
+
+.carte__menu1{
+    font-family: $font-page-1-3-4;
+    color: #3d1319;
+    background-color: #FCDFBD;
+    @include contourMenu;
+
+    .carte__titre1{
+        font-family: $font-menu1;
+        font-size: $size-ptitre;
+    }
+    
+
+    .menu__stitre1{
+        position: relative;
+        white-space: $white-space;
+        margin: $margin-stitre;
+        font-size: 3rem;
+        font-weight: 500;
+            &:hover {
+                &::after {
+                transform: scaleX(1);
+                }
+            }
+                    
+            &::after{
+                color: #000;
+                @include surligneMenu;
+            }
+    }
+            
+            
+    .menu__liste1{
+        padding: 5rem 5rem;
+        line-height: 2;
+        font-size: 1.6rem; 
+        text-align: left;   
+    }
+
+    .carte__footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.6rem;            
+    }   
+
+   .carte__footerimg{
+        width: 5rem;
+        margin: 0 1rem auto;
+    }
+
+    .carte__footerp{
+        font-family: "Devonshire", sans-serif;
+        font-size: 4.5rem;
+    }           
+}
+      
+
+.carte__menu2{
+    font-family: "Libre Baskerville", sans-serif;
+    color: #3d1319;
+    background-color: #FFF5FE;
+    @include contourMenu;
+
+    .carte__titre2{
+        font-family: $font-menu2;
+        font-size: $size-ptitre;
+        background: -webkit-linear-gradient(140deg,#905BFD 0%, #D88526 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        padding: $padding-page;
+    }
+
+    .menu__stitre2{
+        @include fontMenu2;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            color: #C67412;
+            @include surligneMenu;
+        }  
+    }
+
+    .menu__stitre22{
+        @include fontMenu2;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            color: #BC8CC2;
+            @include surligneMenu;
+        }  
+    }
+
+    .menu__stitre222{
+        @include fontMenu2;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            color: #6E4CCC;
+            @include surligneMenu;
+        }  
+    }
+    
+    .menu__liste2{
+        @include menuListeX;
+        text-align: left;
+    }
+
+    .carte__table1{
+        color: #C67412;
+    }
+
+    .carte__table2{
+        color : #BC8CC2;
+    }
+
+    .carte__table3{
+        color: #6E4CCC;
+    }
+}
+
+.carte__menu3{
+    font-family: $font-page-1-3-4;
+    color:$color-page;
+    background-color: #F9F9F9;
+    @include contourMenu;
+
+    .carte__titre3{
+        font-family: $font-menu3;
+        font-size: 5.5rem;
+        background: -webkit-linear-gradient(140deg,#0887FB 10%, #0431DF 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        padding: $padding-page;
+    }
+
+    .menu__stitre3{
+        white-space: $white-space;
+        margin: $margin-stitre;
+        font-size: 2.8rem;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            color: #000;
+            @include surligneMenu;
+        }
+    }
+    
+    .menu__liste3{
+        @include menuListeX;
+    }
+}
+
+.carte__menu4{
+    font-family: $font-page-1-3-4;
+    color: $color-page;
+    background-color: #FDFFFD;
+    @include contourMenu;
+
+    .carte__titre4{
+        font-family: $font-menu4;
+        font-size: 5.5rem;
+        background: -webkit-linear-gradient(140deg,#BFFF7E 0%, #42973C 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        padding: $padding-page;
+    }
+
+    .menu__stitre4{
+        white-space: $white-space;
+        margin: $margin-stitre;
+        font-size: 2.8rem;
+        font-weight: 700;
+        &:hover {
+            &::after {
+              transform: scaleX(1);
+            }
+          }    
+        &::after{
+            color: #000;
+            @include surligneMenu;
+        }
+    }
+    
+    .menu__liste4{
+        @include menuListeX;
+    }
+}
+
+
+

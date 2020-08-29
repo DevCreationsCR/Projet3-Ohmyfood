@@ -1,0 +1,22 @@
+.article_mentions {
+    margin: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+
+    h2 {
+        line-height: 2;
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+    
+    p{
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    a{
+        color: $back-Principal;
+    }
+}
