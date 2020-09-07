@@ -19,4 +19,11 @@
     a{
         color: $back-Principal;
     }
+    
+    @media screen and (max-width : 375px) {
+        h2{
+            font-size: 2rem;
+        }
+    }
 }
+

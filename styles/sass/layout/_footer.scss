@@ -1,21 +1,15 @@
 .footer{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     background-color: $back-Principal;
     color: $color-Principal;
     padding: 2rem;
     position: sticky;
-    box-sizing: border-box;
     bottom: 0;
     font-size: 2.5rem;
 
 
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .mentions, .contact{
         a{
@@ -24,12 +18,12 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            height: 100%;
             &:hover{
                 animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
            }
         }
     }
+
 }
 
 @keyframes shake {
@@ -49,3 +43,11 @@
       transform: translate3d(4px, 0, 0);
     }
   }
+
+  @media screen and (max-width : 768px){
+    .footer{
+      font-size: 2rem;
+    }
+  }
+
+ 

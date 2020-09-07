@@ -8,6 +8,7 @@ li{
     display: flex;
     align-items: stretch;
     justify-content: center;  
+    flex-wrap: wrap;
 }
 
 li a{
@@ -25,6 +26,7 @@ li a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     &__img{
         width: 8rem;
@@ -114,6 +116,45 @@ li a{
 }
 
 
+@media screen and (max-width : 425px) {
+    .nav{
+        &__menu1{
+            @include responmenuIndex;
+        }
+        &__img{
+            width: 5rem;
+        }
+        &__menu2{
+            @include responmenuIndex;
+        }
 
+        &__menu3{
+            @include responmenuIndex;
+        }
+        &__menu4{
+            @include responmenuIndex;
+        }
+    }
+}
 
+@media screen and (max-width : 320px) {
+    .nav{
+        &__menu1{
+            @include responmenuIndex320;
+        }
+        &__img{
+            width: 4rem;
+        }
+        &__menu2{
+            @include responmenuIndex320;
+        }
+
+        &__menu3{
+            @include responmenuIndex320;
+        }
+        &__menu4{
+            @include responmenuIndex320;
+        }
+    }
+}
 

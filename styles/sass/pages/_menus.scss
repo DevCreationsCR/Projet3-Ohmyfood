@@ -4,18 +4,17 @@
     display: flex;
     justify-content: space-between;    
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
 }
-
 .menup{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 .prix{
     font-weight: bold;
 }
-
 .section{
     text-align: center;
     padding: 2rem 2rem;
@@ -23,20 +22,24 @@
         font-size: $size-titre;
     }
 }
-
-.carte__header{
-    padding: 4rem 0 4rem 0;
-}
-
 .carte__img{
     width: 7rem;
 }
-
 .menu__imgg{
     margin-left: 6rem;
 }
 .menu__imgd{
     margin-right: 6rem;
+}
+.menu__imgg2{
+    margin: 0 2rem 0 2rem;
+    height: auto;
+    width: 25rem;;
+}
+.menu__imgd2{
+    margin: 0 2rem 0 2rem;
+    height: auto;
+    width: 25rem;
 }
 
 /*--------MENU 1--------*/
@@ -57,8 +60,7 @@
     .menu__stitre1{
         position: relative;
         white-space: $white-space;
-        margin: $margin-stitre;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 500;
             &:hover {
                 &::after {
@@ -95,9 +97,9 @@
     .carte__footerp{
         font-family: "Devonshire", sans-serif;
         font-size: 4.5rem;
-    }           
+    }  
+    
 }
-      
 
 .carte__menu2{
     font-family: "Libre Baskerville", sans-serif;
@@ -155,7 +157,6 @@
     
     .menu__liste2{
         @include menuListeX;
-        text-align: left;
     }
 
     .carte__table1{
@@ -176,6 +177,7 @@
     color:$color-page;
     background-color: #F9F9F9;
     @include contourMenu;
+
 
     .carte__titre3{
         font-family: $font-menu3;
@@ -212,6 +214,8 @@
     background-color: #FDFFFD;
     @include contourMenu;
 
+    
+
     .carte__titre4{
         font-family: $font-menu4;
         font-size: 5.5rem;
@@ -242,5 +246,323 @@
     }
 }
 
+@media screen and (max-width : 768px){
+    .menup{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;;
+    }
+    .carte__menu1{
+        width : 60rem;
 
+        .menu__stitre1{
+            font-size: 1.7rem;
+            white-space: normal;
+        }
+        .menu__imgd{
+            width: 30%;
+        }
+        .menu__imgg{
+            width: 30%;
+        }
+    }
 
+    .carte__menu2{
+        width : 60rem;
+
+        .menu__stitre2{
+            font-size: 1.6rem;
+        }
+        .menu__stitre22{
+            font-size: 1.6rem;
+        }
+        .menu__stitre222{
+            font-size: 1.6rem;
+        }
+        .menu__imgd2{
+            width: 30%;
+            margin: 0;
+        }
+        .menu__imgg2{
+            width: 30%;
+            margin: 0;
+        }
+
+        .menu__descrip{
+            font-size: 1.3rem;
+        }
+        .menu__liste2{
+            @include reponsListeX;
+        }
+    }
+
+    .carte__menu3{
+        width : 60rem;
+
+        .menu__stitre3{
+            font-size: 2rem;
+        }
+        .menu__imgd2{
+            width: 30%;
+            margin: 0.5rem;
+            
+        }
+        .menu__imgg2{
+            width: 30%;
+            margin: 0.5rem;
+        }
+
+        .menu__descrip{
+            font-size: 1.5rem;
+        }
+        .menu__liste3{
+            @include reponsListeX;
+        }
+    }
+
+    .carte__menu4{
+        width : 60rem;
+
+        .menu__stitre4{
+            font-size: 2rem;
+        }
+        .menu__imgd2{
+            width: 30%;
+            margin: 0.5rem;
+        }
+        .menu__imgg2{
+            width: 30%;
+            margin: 0.5rem;
+        }
+        .menu__descrip{
+            font-size: 1.3rem;
+        }
+        .menu__liste4{
+            @include reponsListeX;
+        }
+    }
+}
+
+@media screen and (max-width : 425px){
+    .menup{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;;
+    }
+    .carte__menu1{
+        width : 40rem;
+
+        .carte__header{
+            padding: 2rem 0 2rem 0;
+        }
+        .menu__stitre1{
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .menu__imgd{
+            width: 20%;
+        }
+        .menu__imgg{
+            width: 30%;
+        }
+        .menu__descrip{
+            font-size: 1.3rem;
+        }
+        .carte__footerp{
+            font-size: 3rem;
+        }
+        .carte__footerimg{
+            width: 3rem;
+            margin: 0 1rem auto;
+        }
+    }
+
+    .carte__menu2{
+        width : 40rem;
+        
+        .carte__titre2{
+            font-size: 2.5rem;
+        }
+        .menu__stitre2{
+            font-size: 1.4rem;
+        }
+        .menu__stitre22{
+            font-size: 1.4rem;
+        }
+        .menu__stitre222{
+            font-size: 1.4rem;
+        }
+        .menu__imgd2{
+            width: 20%;
+            margin: 0;
+        }
+        .menu__imgg2{
+            width: 20%;
+            margin: 0;
+        }
+
+        .menu__descrip{
+            font-size: 1.2rem;
+        }
+    }
+
+    .carte__menu3{
+        width : 40rem;
+
+        .carte__titre3{
+            font-size: 3.5rem;
+        }
+
+        .menu__stitre3{
+            font-size: 2rem;
+        }
+        .menu__imgd2{
+            width: 20%;
+            margin: 0.5rem;
+            
+        }
+        .menu__imgg2{
+            width: 20%;
+            margin: 0.5rem;
+        }
+
+        .menu__descrip{
+            font-size: 1.5rem;
+        }
+
+        .menu__liste3{
+            @include reponsListeX;
+            
+        }
+    }
+
+    .carte__menu4{
+        width : 40rem;
+
+        .carte__titre4{
+            font-size: 4rem;
+        }
+        .menu__stitre4{
+            font-size: 2rem;
+        }
+        .menu__imgd2{
+            width: 20%;
+            margin: 0.5rem;
+        }
+        .menu__imgg2{
+            width: 20%;
+            margin: 0.5rem;
+        }
+        .menu__descrip{
+            font-size: 1.3rem;
+        }
+        .menu__liste4{
+            @include reponsListeX;
+        }
+    }
+}
+
+@media screen and (max-width : 320px){
+    .menup{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;;
+    }
+    .carte__menu1{
+        width : 35rem;
+
+        .carte__titre1{
+            font-size: 2.5rem;
+        }
+        .menu__imgd{
+            width: 20%;
+        }
+        .menu__imgg{
+            width: 20%;
+        }
+    }
+
+    .carte__menu2{
+        width : 30rem;
+
+        .carte__titre2{
+            font-size: 2.2rem;
+        }
+
+        .menu__stitre2{
+            font-size: 1rem;
+        }
+        .menu__stitre22{
+            font-size: 1rem;
+        }
+        .menu__stitre222{
+            font-size: 1rem;
+        }
+        .menu__imgd2{
+            width: 20%;
+            margin: 0;
+        }
+        .menu__imgg2{
+            width: 20%;
+            margin: 0;
+        }
+
+        .menu__descrip{
+            font-size: 1.3rem;
+        }
+    }
+
+    .carte__menu3{
+        width : 35rem;
+
+        .carte__titre3{
+            font-size: 3.5rem;
+        }
+
+        .menu__stitre3{
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .menu__imgd2{
+            width: 20%;
+            margin: 0.2rem;
+            
+        }
+        .menu__imgg2{
+            width: 20%;
+            margin: 0.2rem;
+        }
+
+        .menu__descrip{
+            font-size: 1.5rem;
+        }
+        .menu__liste3{
+            @include reponsListeX;
+        }
+    }
+
+    .carte__menu4{
+        width : 35rem;
+
+        .carte__titre4{
+            font-size: 3.5rem;
+        }
+        .menu__stitre4{
+            font-size: 1.5rem;
+        }
+        .menu__imgd2{
+            width: 20%;
+            margin: 0.5rem;
+        }
+        .menu__imgg2{
+            width: 20%;
+            margin: 0.5rem;
+        }
+        .menu__descrip{
+            font-size: 1rem;
+        }
+        .menu__liste4{
+            @include reponsListeX;
+        }
+    }
+}

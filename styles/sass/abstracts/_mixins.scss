@@ -1,8 +1,8 @@
 @mixin contourMenu {
     box-shadow: 0.5px 0.5px 5px #888;
     opacity: $opacity-Shadow;
-    width: 90rem;
     height: 120rem;
+    width: 90rem;
     margin: 0 auto 2rem auto; 
     text-align: center;
 }
@@ -17,6 +17,27 @@
     margin: 5rem;
 }
 
+@mixin responmenuIndex{
+    box-shadow: 0.5px 0.5px 5px #888;
+    opacity: 1;
+    text-align: center;
+    width: 30rem;
+    height: 45rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+@mixin responmenuIndex320{
+    box-shadow: 0.5px 0.5px 5px #888;
+    opacity: 1;
+    text-align: center;
+    width: 25rem;
+    height: 40rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+
 @mixin sizefontMeme{
     font-family : "Segoe Print", sans-serif;
     font-size: 3rem;
@@ -25,7 +46,7 @@
 @mixin fontMenu2 {
 	margin: 0 1.6rem;
     white-space: nowrap;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -45,60 +66,23 @@
     padding: 0 12rem 0 12rem;
     line-height: 2;
     font-size: 1.6rem;
+    text-align: left;
 }
 
-@mixin responsive($typedev, $breakpoint) {
-    @if $typedev==desktop {
-        @if $breakpoint==small {
-            @media (max-width: 639px) {
-                @content;                
-            }            
-        } 
-        
-        @if $breakpoint==moyen {
-            @media (max-width: 767px) {
-                @content;                
-            }            
-        }       
-
-        @if $breakpoint==large {
-            @media (max-width: 1023px) {
-                @content;                
-            }            
-        }       
-
-        @if $breakpoint==xlarge {
-            @media (min-width: 1279px) {
-                @content;                
-            }            
-        }       
-      
-    }
-    
-    @if $typedev==mobile {
-        @if $breackpoint==small {
-            @media (min-width: 640px) {
-                    @content;                
-            }            
-        } 
-        
-        @if $breackpoint==moyen {
-            @media (min-width: 768px) {
-                    @content;                
-            }            
-        }
-
-        @if $breackpoint==large {
-            @media (min-width: 1024px) {
-                    @content;                
-            }            
-        }
-
-        @if $breackpoint==xlarge {
-            @media (min-width: 1280px) {
-                    @content;                
-            }            
-        }
-        
-    }
+@mixin reponsListeX {
+    margin: 5rem 0 5rem 0;
+    padding: 0 6rem 0 6rem;
+    line-height: 2;
+    font-size: 1.6rem;
+    text-align: left;
 }
+
+@mixin contourMenuresponsive {
+    box-shadow: 0.5px 0.5px 5px #888;
+    opacity: $opacity-Shadow;
+    width: 50rem;
+    height: 50rem;
+    margin: 0 auto 2rem auto; 
+    text-align: center;
+}
+
