@@ -434,6 +434,10 @@ li a:hover {
 }
 
 /*--------MENU 1--------*/
+.carte__header1 {
+  padding: 5rem 0;
+}
+
 .carte__menu1 {
   font-family: "Kalam", sans-serif;
   color: #3d1319;
