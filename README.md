@@ -17,5 +17,4 @@
 
 ### Site web statique :
 
-* Le site [ici](https://cynrim.github.io/Projet3-Ohmyfood/)
-* Ou ici [à venir](a-venir)
+* Le site [ici](https://devcreationscr.github.io/Projet3-Ohmyfood/)
